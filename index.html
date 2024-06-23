@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function () {
+            emailjs.init("idjqT3z7JppOlQajY");
+        })();
+    </script>
+
+
+</head>
+
+<body class="bg-gray-100 text-gray-900">
+    <!-- Header -->
+    <header class="bg-white shadow-md py-4">
+        <div class="container mx-auto px-6 flex justify-between items-center">
+            <div class="text-2xl font-bold">Aditya Anand</div>
+            <nav class="hidden md:flex space-x-6 ">
+                <a href="#home" class="hover:text-indigo-600">Home</a>
+                <a href="#about" class="hover:text-indigo-600">About</a>
+                <a href="#portfolio" class="hover:text-indigo-600">Projects</a>
+                <a href="#skills" class="hover:text-indigo-600">Skills</a>
+                <a href="#contact" class="hover:text-indigo-600">Contact</a>
+                <!-- <a href="#hire-me" class="bg-indigo-600 text-white py-2 px-4 rounded hover:bg-indigo-700">Hire Me</a> -->
+            </nav>
+            <div class="md:hidden">
+                <button id="menu-btn" class="text-gray-900 focus:outline-none">
+                    <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M4 6h16M4 12h16m-7 6h7"></path>
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Mobile Menu -->
+    <div id="mobile-menu" class="hidden md:hidden">
+        <nav class="px-6 py-4">
+            <a href="#home" class="block py-2">Home</a>
+            <a href="#about" class="block py-2">About</a>
+            <a href="#Projects" class="block py-2">Projects</a>
+            <a href="#skills" class="block py-2">Skills</a>
+            <a href="#contact" class="block py-2">Contact</a>
+            <!-- <a href="#hire-me" class="block py-2 bg-indigo-600 text-white rounded">Hire Me</a> -->
+        </nav>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="container mx-auto px-6 py-12 flex flex-col md:flex-row items-center">
+        <div class="w-full md:w-2/3 mb-6 md:mb-0">
+            <img src="aditya.jpg" alt="Web Developer Image" class="w-full md:w-2/3 h-2/3 rounded-lg shadow-lg">
+        </div>
+        <div class="w-full md:w-1/2 mt-6 md:mt-0 md:ml-6">
+            <h1 class="text-4xl font-bold">Hi, I'm Aditya Anand, Full Stack Web Developer.</h1>
+            <p class="mt-4 text-lg">Welcome! I'm a seasoned web developer dedicated to crafting engaging online
+                experiences. With a passion for clean, efficient code and a keen eye for design, I specialize in
+                bringing ideas to life through responsive and dynamic websites. </p>
+            <a href="/Users/adityaanand/Desktop/Portfolio/web-developer-portfolio/aditya_Resume  copy.pdf"
+                download="Aditya_Anand_Resume.pdf"
+                class="mt-6 inline-block bg-indigo-600 text-white py-2 px-4 rounded hover:bg-indigo-700">Download
+                Resume</a>
+
+        </div>
+    </section>
+
+
+    <!-- About Section -->
+    <section class="bg-white py-12">
+        <div class="container mx-auto px-6">
+            <h2 id="about" class="text-3xl font-bold text-center">About Me</h2>
+            <p class="mt-4 text-lg text-center">Greetings! I'm Aditya Anand, a computer science professional with a
+                strong foundation in technology. I have completed my Bachelor's degree in Computer Science from
+                IIIT-Delhi, where I honed my skills in data structures, algorithms, and cybersecurity.
+
+                My journey in tech began with a passion for problem-solving and innovation. This led me to develop an
+                E-Authentication System with enhanced security features like OTP and QR codes, and create a Real-Time
+                Chat Application. Additionally, my experience as a student trainee at the Centre for Development of
+                Telematics (C-DOT) enriched my expertise in threat detection and cybersecurity solutions.
+
+                Committed to staying updated on the latest trends, I strive to create solutions that are both
+                technically sound and user-centric. My technical toolkit includes proficiency in Python, Java, C,
+                HTML/CSS, JavaScript, and R, along with tools like VS Code and Eclipse.</p>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="bg-gray-100 py-12">
+        <div class="container mx-auto px-6">
+            <h2 id="skills" class="text-3xl font-bold text-center">Technical Skills</h2>
+            <div class="flex flex-wrap justify-center mt-6">
+                <div class="w-1/2 md:w-1/4 lg:w-1/6 p-4">
+                    <img src="HTML.png" alt="HTML" class="mx-auto h-16">
+                    <p class="mt-2 text-center">HTML</p>
+                </div>
+                <div class="w-1/2 md:w-1/4 lg:w-1/6 p-4">
+                    <img src="CSS.png" CSS" class="mx-auto h-16">
+                    <p class="mt-2 text-center">CSS</p>
+                </div>
+                <div class="w-1/2 md:w-1/4 lg:w-1/6 p-4">
+                    <img src="JS.png" alt="JavaScript" class="mx-auto h-16">
+                    <p class="mt-2 text-center">JavaScript</p>
+                </div>
+                <div class="w-1/2 md:w-1/4 lg:w-1/6 p-4">
+                    <img src="React.png" alt="React" class="mx-auto h-16">
+                    <p class="mt-2 text-center">React Js</p>
+                </div>
+                <div class="w-1/2 md:w-1/4 lg:w-1/6 p-4">
+                    <img src="nodejs.png" alt="Node" class="mx-auto h-16">
+                    <p class="mt-2 text-center">Node Js</p>
+                </div>
+                <div class="w-1/2 md:w-1/4 lg:w-1/6 p-4">
+                    <img src="express.png" alt="Express" class="mx-auto h-16">
+                    <p class="mt-2 text-center">Express Js</p>
+                </div>
+                <div class="w-1/2 md:w-1/4 lg:w-1/6 p-4">
+                    <img src="mongo_db.webp" alt="Mongo" class="mx-auto h-16">
+                    <p class="mt-2 text-center">MongoDB</p>
+                </div>
+                <div class="w-1/2 md:w-1/4 lg:w-1/6 p-4">
+                    <img src="docker.png" alt="docker" class="mx-auto h-16">
+                    <p class="mt-2 text-center">Docker</p>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- Portfolio Section -->
+    <section class="bg-white py-12">
+        <div class="container mx-auto px-6">
+            <h2 id="portfolio" class="text-3xl font-bold text-center">Projects</h2>
+            <div class="flex flex-wrap justify-center mt-6">
+                <div class="w-full md:w-1/2 lg:w-1/3 p-4">
+                    <div class="bg-gray-100 rounded-lg shadow-lg p-4">
+                        <img src="portfolio_website.png" alt="Project 1" class="w-full h-auto rounded">
+                        <h3 class="text-xl font-bold mt-4">Portfolio Website</h3>
+
+                        <div class="flex justify-between mt-4">
+                            <a href="https://aditya-anand-portfolio.vercel.app/"
+                                class="text-indigo-600 hover:text-indigo-800">Live Demo</a>
+                            <a href="https://github.com/Aditya20488" class="text-indigo-600 hover:text-indigo-800"
+                                target="_blank">GitHub</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="w-full md:w-1/2 lg:w-1/3 p-4">
+                    <div class="bg-gray-100 rounded-lg shadow-lg p-4">
+                        <img src="E-Authentication-System-using-QR-Code-OTP.jpeg" alt="Project 2"
+                            class="w-full h-auto rounded">
+                        <h3 class="text-xl font-bold mt-4">E-authentication System using OTP and QR code </h3>
+
+                        <div class="flex justify-between mt-4">
+                            <a href="[live-demo-link-2]" class="text-indigo-600 hover:text-indigo-800">Live Demo</a>
+                            <a href="https://github.com/Aditya20488" class="text-indigo-600 hover:text-indigo-800"
+                                target="_blank">GitHub</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="w-full md:w-1/2 lg:w-1/3 p-4">
+                    <div class="bg-gray-100 rounded-lg shadow-lg p-4">
+                        <img src="real-time.png" alt="Project 3" class="w-full h-auto rounded">
+                        <h3 class="text-xl font-bold mt-4">Real-Time Chat Application</h3>
+
+                        <div class="flex justify-between mt-4">
+                            <a href="[live-demo-link-1]" class="text-indigo-600 hover:text-indigo-800">Live Demo</a>
+                            <a href="https://github.com/Aditya20488" class="text-indigo-600 hover:text-indigo-800"
+                                target="_blank">GitHub</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <section class="bg-gray-100 py-12">
+        <div class="container mx-auto px-6">
+            <h2 id="experience" class="text-3xl font-bold text-center mb-6">Work Experience</h2>
+            <div class="flex flex-col space-y-6">
+                <div class="bg-white shadow-md p-6 rounded-lg">
+                    <h3 class="text-xl font-bold mb-2">Student Trainee</h3>
+                    <p class="text-gray-600 mb-2">C-DOT(Research and Development)</p>
+                    <p class="text-gray-600 mb-2">Centre for Development of Telematics, Ministry of Communication (Govt
+                        of India)</p>
+                    <p class="text-gray-600 mb-2">May 2023 - July 2023</p>
+                    <ul class="list-disc ml-6">
+                        <li>Conducted in-depth research on security solutions, with a specialized focus on Intrusion
+                            Prevention Systems (IPS) and Intrusion Detection Systems (IDS) during my tenure as a student
+                            trainee at CDOT.</li>
+                        <li>Expanded expertise through hands-on experience with Suricata, enhancing proficiency in
+                            threat detection and mitigation techniques. .</li>
+                        <li>Actively contributed to the identification and prevention of cyber attacks by leveraging
+                            Suricata’s advanced capabilities, demonstrating a proactive approach to cybersecurity
+                            challenges.</li>
+                        <li>Explored ways to visualize and send a daily report of test results to team members using
+                            HTML, Javascript, and CSS</li>
+
+                    </ul>
+                </div>
+
+
+            </div>
+        </div>
+    </section>
+
+    <section class="bg-gray-100 py-12">
+        <div class="container mx-auto px-6">
+            <h2 id="contact" class="text-3xl font-bold text-center mb-6">Contact Me</h2>
+
+            <div class="bg-white shadow-md p-6 rounded-lg">
+                <h3 class="text-xl font-bold mb-4">Contact Form</h3>
+
+                <div class="mb-4">
+                    <label for="name" class="block text-sm font-medium text-gray-700">Name</label>
+                    <input type="text" name="name" id="name" class="mt-1 p-2 border border-gray-300 rounded-md w-full">
+                </div>
+                <div class="mb-4">
+                    <label for="email" class="block text-sm font-medium text-gray-700">Email</label>
+                    <input type="email" name="email" id="email"
+                        class="mt-1 p-2 border border-gray-300 rounded-md w-full">
+                </div>
+                <div class="mb-4">
+                    <label for="message" class="block text-sm font-medium text-gray-700">Message</label>
+                    <textarea name="message" id="message" rows="4"
+                        class="mt-1 p-2 border border-gray-300 rounded-md w-full"></textarea>
+                </div>
+                <button id="submitBtn" class="bg-blue-500 text-white py-2 px-4 rounded-md hover:bg-blue-600">Send
+                    Message</button>
+            </div>
+        </div>
+        </div>
+    </section>
+
+
+    <!-- Social Media Links -->
+    <footer class="bg-gray-800 text-white py-4 ">
+        <div class="flex justify-center mt-8 space-x-4">
+            <a href="https://github.com/Aditya20488" class="text-indigo-600 hover:text-indigo-800"><i
+                    class="fab fa-github"></i> GitHub</a>
+            <a href="https://www.linkedin.com/in/aditya-anand2528/" class="text-indigo-600 hover:text-indigo-800">
+                <i class="fab fa-linkedin"></i> LinkedIn</a>
+            <a href="https://www.instagram.com/addy_2528/" class="text-indigo-600 hover:text-indigo-800"><i
+                    class="fab fa-instagram"></i> Instagram</a>
+
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
